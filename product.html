@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAGIDONK</title>
+
+    <link rel="stylesheet" href="./asset/css/stylesheet.css">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">BAGIDONK!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html/">Profil</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./index.html">Testimoni</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sumbangan
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./sppage.html">Pakaian</a></li>
+                    <li><a class="dropdown-item" href="./sbpage.html">Buku</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Masuk</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    <!-- End Navbar -->
+
+    <section id=product class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">Judul Teks</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="owner-name-and-location">Nama pemilik - Lokasi</span>
+						</div>
+						<p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+						
+						<div class="action">
+							<button class="add-to-cart btn btn-outline-danger" type="button">Hubungi Penjual</button>
+							<button class="add-to-cart btn btn-danger" type="button">Ambil Sekarang!</button>
+							<button class="add-to-cart btn btn-outline-danger my-2 mx-5" type="button">Masukkan Keranjang!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+</header>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-2 text-center">Made with 💕 © Bagidonk 2021</p>
+    </footer>
+    <!-- End footer -->
+    
+
+    <script src="./asset/js/jquery-3.6.0.min.js"></script>
+    <script src="./asset/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        // MDB Lightbox Init
+        $(function () {
+          $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+      });
+    </script>
+    
+</body>
+</html>
