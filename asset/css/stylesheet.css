@@ -108,7 +108,7 @@ header {
 }
 
 #sp {
-    min-height: calc(110vh - 250vh);
+    min-height: calc(100vh - 250vh);
     background-color: #EFB7B7
 }
 
@@ -145,7 +145,8 @@ html {
 /* product */
 body {
     font-family: 'open sans';
-    overflow-x: hidden; }
+    overflow-x: hidden; 
+  }
   
 img {
     max-width: 100%; }
@@ -285,3 +286,60 @@ img {
       -webkit-transform: scale(1);
               transform: scale(1); } }
 /* end product */
+
+/* sign */
+#login{
+    min-height: 80px;
+}
+#login.container, #sign.container{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BD4B4B;
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+
+#login .login-form, #sign .login-form {
+  width: 380px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 10px !important;
+}
+
+#login input[type="email"],
+#login input[type="password"],
+#sign input[type="email"], 
+#sign input[type="name"], 
+#sign input[type="username"],
+#sign input[type="password"],
+#sign input[type="password2"] {
+    border: 2px solid #EFB7B7;
+    border-radius: 8px;
+}
+
+#login input[type="email"]:focus,
+#login input[type="password"]:focus,
+#sign input[type="email"]:focus, 
+#sign input[type="name"]:focus, 
+#sign input[type="username"]:focus, 
+#sign input[type="password"]:focus, 
+#sign input[type="password2"]:focus {
+    outline: none;
+    border: none;
+}
+
+#login .btn, #sign .btn {
+    background: #BD4B4B !important;
+    color: #fff;
+    transform: translateY(10px);
+    border: 2px solid #EFB7B7;
+    border-radius: 8px;
+}
+
+#sign .card {
+    height: 150%;
+}
+/* end sign */
+
