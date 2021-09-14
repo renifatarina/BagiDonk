@@ -12,7 +12,7 @@
 <body>
 <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="./index.html">BAGIDONK!</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Profil</a>
+                <a class="nav-link" aria-current="page" href="./index.html/">Profil</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="./index.html">Testimoni</a>
@@ -48,7 +48,7 @@
     <!-- Sumbangan Pakaian-->
     <section id="sp" class="pt-5">
         <div class="container">
-            <h2 class="text-center">Sumbangan Pakaian</h2>
+            <h2 class="text-center pt-4">Sumbangan Pakaian</h2>
             <hr>
             <div class="row main-row p-2">
                 <div class="col-lg-4 col-md-12 col-sm-12">
@@ -187,25 +187,26 @@
     <!-- End Sumbangan Pakaian -->
 
     <!-- Next previous button -->
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center py-3">
-          <li class="page-item pagination-outline-danger">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item active"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-    </nav>
+    <section id=page>
+        <nav class="mt-2 " aria-label="Page navigation example">
+            <ul class="pagination justify-content-center py-3">
+              <li class="page-item ">
+                <a class="page-link btn-danger" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link btn-danger" href="#">1</a></li>
+              <li class="page-item"><a class="page-link btn-danger" href="#">2</a></li>
+              <li class="page-item"><a class="page-link btn-danger" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link btn-danger" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
+    </section>
     <!-- End Next previous button -->
-</header>
 
     <!-- Footer -->
     <footer>
