@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap');
+
+* {
+    font-family: 'Signika', sans-serif;
+}
+
 nav {
     top: 0;
     left: 0;
@@ -8,8 +14,6 @@ nav {
 nav.navbar {
     background-color: #BD4B4B; 
 }
-
-
 
 /* #home.container.row.col-md-6{
     height: 100vh;
@@ -56,8 +60,6 @@ header {
     width: 100%;
 } */
 
-
-
 #testimoni .owl-next, .owl-prev {
     position: absolute;
     top: 95px;   
@@ -95,19 +97,20 @@ header {
     color: white; 
 }
 
-#sp .main-row {
+#sp .main-row, #sb .main-row {
     background-color: white;
     margin: 2%;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, .05);
     border-radius: 0.5rem;
 }
 
-#sp .main-row .blog-img img {
+#sp .main-row .blog-img img,
+#sb .main-row .blog-img img  {
     height: 200px;
     padding-left: 80px;
 }
 
-#sp {
+#sp,#sb {
     min-height: calc(100vh - 250vh);
     background-color: #EFB7B7
 }
@@ -127,8 +130,8 @@ header {
     padding: 10px;
     box-sizing: border-box;
 }
-nav.pagination {
-    color: #BD4B4B!important;
+nav.button .pagination .page-item li {
+    color: #BD4B4B !important;
 }
 
 footer {
@@ -288,8 +291,9 @@ img {
 /* end product */
 
 /* sign */
-#login{
+header #login{
     min-height: 80px;
+    background-color: #EFB7B7 ;
 }
 #login.container, #sign.container{
     height:100%;
@@ -343,3 +347,9 @@ img {
 }
 /* end sign */
 
+/* pagination */
+#page nav a {
+    color: #BD4B4B !important;
+    text-decoration: none;
+}
+/* pagination end */
