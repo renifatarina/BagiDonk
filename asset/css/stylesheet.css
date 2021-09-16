@@ -119,11 +119,24 @@ header {
     background-color: #EFB7B7
 }
 
-/* footer */
+/* sumbangan page */
 nav.button .pagination .page-item li {
     color: #BD4B4B !important;
 }
 
+#sp .container .row,
+#sb .container .row {
+    transition:all 0.5s ease-out; 
+	position: relative;
+}
+
+#sp .container .row:hover,
+#sp .container .row:hover {
+    transform:scale(1.015);
+}
+/* end sumbangan page */
+
+/* footer */
 footer {
     background-color: #BD4B4B; 
     min-height: 40px;
