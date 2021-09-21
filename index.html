@@ -21,6 +21,9 @@
 <body>
     <header>
     <!-- Navbar -->
+    <canvas id="canvas1">
+        <script src="./asset/js/script.js"></script>
+    </canvas>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-sm">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
@@ -55,7 +58,7 @@
         </div>
       </nav>
     <!-- End Navbar -->
-      
+    
     <!-- Header home -->
     <div id="home" class="container">
         <div class="row">
@@ -70,26 +73,29 @@
                         </p>
 
                         <div class="button-wrapper">
-                            <button class="btn btn-danger">Setor Aja!</button>
-                            <button class="btn btn-outline-danger">Ambil Barang!</button>
+                            <a class="btn btn-danger" href="./loginpage.html" role="button">Setor Aja!</a>
+                            <a class="btn btn-outline-danger" href="./sppage.html" role="button">Ambil Barang!</a>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
+    
     <!-- End header home -->
     </header>
 
     <!-- Profil -->
-    <section id="profil" class="container  p-5">
+    <section id="profil" class="container  py-5">
         <div class="container">
             <h2 class="text-center mt-4">Profil BagiDonk!</h2>
             <hr>
             <div class="row">
-                <div class="col-12 col-md-12 my-3 text-center">
+                <div class="col-12 col-md-4">
+                    <img src="./asset/img/logo.png" alt="" width="80%">
+                </div>
+                <div class="col-12 col-md-8 my-3 pt-4 text-left">
                         <p>BagiDonk merupakan website yang dibangun untuk berbagi dan bersedekah sesama manusia, barang yang disalurkan berupa pakaian dan buku bekas yang masih layak pakai. BagiDonk membantu mempertemukan antara orang yang ingin berbagi dengan orang yang membutuhkan.</p>
-                        <p>BagiDonk memiliki tujuan yaitu membantu sesama manusia dan mengurangi barang yang tidak terpakai agar tidak menumpuk. Selain itu, BagiDonk memfasilitasi orang untuk bersedekah serta memudahkan orang dalam mencari bantuan berupa pakaian dan buku bekas yang masih layak pakai.</p>
-                   
+                        <p>BagiDonk memiliki tujuan yaitu membantu sesama manusia dan mengurangi barang yang tidak terpakai agar tidak menumpuk. Selain itu, BagiDonk memfasilitasi orang untuk bersedekah serta memudahkan orang dalam mencari bantuan berupa pakaian dan buku bekas yang masih layak pakai.</p>  
                 </div>
             </div> 
         </div>
@@ -190,12 +196,7 @@
     <!-- jquery -->
     <script src="./asset/js/jquery-3.6.0.min.js"></script>
     <script src="./asset/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
+    
 
     <!-- jquery cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
