@@ -4,6 +4,11 @@
     font-family: 'Signika', sans-serif;
 }
 
+hr {
+    display: block;
+    border-bottom: 3px solid #0F7AF9 ; 
+}
+
 nav {
     top: 0;
     left: 0;
@@ -16,22 +21,17 @@ nav.navbar {
 }
 
 /* home */
-#home {
-    min-height: 100vh;
-}
-
 #home.container .row .col-md-7 img{
     height: 50vh;
     position: absolute;
     top: 150px;
-    right: 0px;
+    right: 50px;
 }
 
 #home.container .row .col-md-5 {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
+    height: 50vh;
+    position: absolute;
+    top: 40vh;
 }
 
 #home.container .row .col-md-5 p {
@@ -42,11 +42,16 @@ nav.navbar {
     font-size: 20px;
 }
 
-
-
 @media only screen and (max-width: 768px) {
+    #home {
+        height: 120px;
+    }
+    #home.container .row .col-md-7 img{
+        right: 0;
+    }
     #home.container .row .col-md-5 {
         margin-top: 40vh;
+
     }
 }
 /* end home */
@@ -54,6 +59,10 @@ nav.navbar {
 /* profil */
 #profil p {
     font-size: 19px;
+}
+
+#profil .row .col-md-4 img {
+    padding-left: 80px;
 }
 /* end profil */
 
@@ -111,6 +120,7 @@ header {
     min-height: 100vh;
 }
 
+/* sumbangan page */
 #sp .main-row, #sb .main-row {
     background-color: white;
     margin: 2%;
@@ -126,17 +136,18 @@ header {
 
 #sp,#sb {
     min-height: calc(100vh - 250vh);
-    background-color: #EFB7B7
+    background-color: #EFB7B7;
 }
 
-#sp .container .row {
+#sp .container .row, #sb .container .row {
     transition:all 0.5s ease-out; 
 	position: relative;
 }
 
-#sp .container .row:hover {
+#sp .container .row:hover, #sb .container .row:hover {
     transform:scale(1.015);
 }
+/* end sumbangan page */
 
 /* footer */
 nav.button .pagination .page-item li {
@@ -200,7 +211,7 @@ img {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  
+
 .preview-thumbnail.nav-tabs {
     border: none;
     margin-top: 15px; }
@@ -371,6 +382,11 @@ header #login{
 
 #sign .card {
     height: 150%;
+}
+
+form a {
+    text-decoration: none;
+    color: black;
 }
 /* end sign */
 
